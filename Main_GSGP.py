@@ -18,6 +18,8 @@ import numpy as np
 # Copyright ©2019-2023 J. E. Batista
 #
 
+# This has been modified for E Mackness' dissertation research
+
 def openAndSplitDatasets(which, seed):
     if VERBOSE:
         print("> Opening: ", which)
