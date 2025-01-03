@@ -270,10 +270,10 @@ class GSGP:
         return genLimit or perfectAccuracy or perfectRMSE
 
     def nextGeneration(self):
-        '''
+        """
 		Generation algorithm: the population is sorted; the best individual is pruned;
 		the elite is selected; and the offspring are created.
-		'''
+		"""
         begin = time.time()
 
         # Calculates the accuracy of the population using multiprocessing
