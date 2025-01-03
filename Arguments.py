@@ -11,14 +11,14 @@ from sys import argv
 OPERATORS = [("+",2),("-",2),("*",2),("/",2)]
 MAX_DEPTH = 6 # max depth of the initial trees
 POPULATION_SIZE = 500
-MAX_GENERATION = 1000
+MAX_GENERATION = 100
 TOURNAMENT_SIZE = 10
 ELITISM_SIZE = 1
 MUTATION_STEP = 0.01
 THREADS = 1
 VERBOSE = True
 
-RUNS = 30
+RUNS = 1
 SHUFFLE = True
 TRAIN_FRACTION = 0.70
 
@@ -56,7 +56,6 @@ if "-dontshuffle" in argv:
 	SHUFFLE = False
 if "-ms" in argv:
 	MUTATION_STEP = float(argv[argv.index("-ms")+1])
-
 
 out = None
 

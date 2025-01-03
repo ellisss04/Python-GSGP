@@ -114,11 +114,8 @@ class Individual:
 	def __gt__(self,other):
 		return self.getFitness() > other.getFitness()
 
-
 	def getFitness(self):
 		return self.getRMSE(self.training_X, self.training_Y, pred="Tr") *-1
-
-
 
 	def getRMSE(self, X,Y,pred=None):
 		'''

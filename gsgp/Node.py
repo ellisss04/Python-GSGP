@@ -58,9 +58,9 @@ class Node:
 
 
 	def getDepth(self):
-		'''
+		"""
 		Returns the depth of this Node.
-		'''
+		"""
 		if self.branches == None:
 			return 1
 		else:
@@ -68,9 +68,9 @@ class Node:
 
 
 	def clone(self):
-		'''
+		"""
 		Returns a clone of this node.
-		'''
+		"""
 		if self.branches == None:
 			n = Node()
 			n.copy(value=self.value, branches = None)
